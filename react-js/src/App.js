@@ -1,24 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
+
+import AddItem from './Component/AddItem/index'
+import TodoItems from './Component/TodoItems/index'
+import RecycleBen from './Component/TodoRecycleBen/index'
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      Todo-List Project
+
+      <AddItem />
+      <TodoItems />
+      <RecycleBen />
     </div>
   );
 }
